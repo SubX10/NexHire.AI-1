@@ -2,11 +2,21 @@
 
 import React from "react";
 import "./Hero.css";
-// import { FiSearch, FiHelpCircle } from "react-icons/fi";
 import TextType from "../TextType/TextType";
-import { FiSearch, FiHelpCircle, FiUser, FiFileText } from "react-icons/fi";
+import {
+  FiSearch,
+  FiHelpCircle,
+  FiUser,
+  FiFileText,
+  FiZap,
+} from "react-icons/fi";
 
-const Hero = () => {
+// 1. Accept the new handler props here
+const Hero = ({
+  onGetStartedClick,
+  onShowRecruiterLogin,
+  onShowCandidateLogin,
+}) => {
   return (
     <section className="hero-section">
       <h1>
@@ -14,15 +24,11 @@ const Hero = () => {
         <TextType
           className="gradient-text"
           text={[
-            "AI-Powered Hiring",
-            "Smart Recuitment",
             "Automated Interviews",
-            "Future of Hiring",
+            "AI-Powered Hiring",
+            "Smart Recruitment",
+            "The Future of Hiring",
           ]}
-          typingSpeed={75}
-          pauseDuration={1500}
-          showCursor={true}
-          cursorCharacter="|"
         />
       </h1>
       <p className="hero-subtitle">
@@ -31,7 +37,9 @@ const Hero = () => {
         and make data-driven hiring decisions.
       </p>
       <div className="cta-buttons">
-        <button className="btn btn-primary">⚡Get Started</button>
+        <button className="btn btn-primary" onClick={onGetStartedClick}>
+          <FiZap /> Get Started
+        </button>
         <button className="btn btn-secondary">
           <FiSearch /> Find Jobs
         </button>
@@ -39,16 +47,17 @@ const Hero = () => {
           <FiHelpCircle /> How It Works?
         </button>
       </div>
-
       <div className="login-links">
-        <a href="#" className="login-btn">
+        {/* 2. Changed <a> to <button> and added the onClick handler */}
+        <button className="login-btn" onClick={onShowCandidateLogin}>
           <FiUser />
           <span>Candidate Login &gt;</span>
-        </a>
-        <a href="#" className="login-btn">
+        </button>
+        {/* 3. Changed <a> to <button> and added the onClick handler */}
+        <button className="login-btn" onClick={onShowRecruiterLogin}>
           <FiFileText />
           <span>Recruiter Login &gt;</span>
-        </a>
+        </button>
       </div>
     </section>
   );
