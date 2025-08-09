@@ -1,0 +1,113 @@
+.registration-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  padding: 2rem 0; /* Add padding for smaller screens */
+}
+
+.registration-card {
+  background-color: var(--card-bg-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(20, 23, 71, 0.15);
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.registration-logo-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, var(--accent-color-1), var(--accent-color-2));
+  color: var(--button-text-color);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.registration-card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.registration-subtitle {
+  color: var(--secondary-text-color);
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.registration-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--primary-text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fcfdff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-color-1);
+  box-shadow: 0 0 0 3px rgba(106, 102, 255, 0.2);
+}
+
+.btn-register {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: var(--button-primary-bg);
+  color: var(--button-text-color);
+  margin-top: 0.5rem;
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}
+
+.footer-links {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+.footer-links p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--accent-color-1);
+  font-weight: 600;
+  text-decoration: underline;
+}

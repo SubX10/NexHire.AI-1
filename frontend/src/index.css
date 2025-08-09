@@ -1,0 +1,40 @@
+/* src/index.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* Define color variables for easy management */
+:root {
+  --background-color: #f6f7fe;
+  --primary-text-color: #0b0f3a;
+  --secondary-text-color: #5b5d7e;
+  --accent-color-1: #6a66ff;
+  --accent-color-2: #4d9cff;
+  --button-primary-bg: #0b0f3a;
+  --button-text-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --border-color: #e0e2f1;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend';
+  /* CHANGED: Replaced the solid color with your new gradient */
+  background: linear-gradient(to bottom right, #a6aacd, #f1f2ff, #dfe0fe);
+  color: var(--primary-text-color);
+  min-height: 100vh; /* Ensure gradient covers the full page height */
+}
+
+a, button {
+  font-family: 'Lexend';
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}

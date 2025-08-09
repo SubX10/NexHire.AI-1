@@ -1,0 +1,41 @@
+/* .text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+} */
+
+/* This is your component's base CSS */
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+/* This applies the gradient to the component */
+.text-type.gradient-text {
+  background: linear-gradient(90deg, var(--accent-color-1), var(--accent-color-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* This ensures the cursor remains visible with a solid color */
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+  /* Give the cursor a solid color from your theme */
+  color: var(--accent-color-1);
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}

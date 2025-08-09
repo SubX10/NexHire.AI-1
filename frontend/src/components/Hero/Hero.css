@@ -1,0 +1,94 @@
+/* src/components/Hero/Hero.css */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 0 4rem;
+  gap: 1.5rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  max-width: 800px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-color-1), var(--accent-color-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  max-width: 650px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-text-color);
+}
+
+.btn-secondary {
+  background-color: var(--card-bg-color);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--border-color);
+}
+
+.login-links {
+  display: flex;
+  gap: 1rem; /* Adjusted gap slightly for button spacing */
+  /* margin-top: 1rem; Added some space above the login buttons */
+}
+
+/* REPLACED the old .login-links a styles with these new .login-btn styles */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #f5f6fd; /* The "little dark background" on hover */
+  color: var(--primary-text-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+

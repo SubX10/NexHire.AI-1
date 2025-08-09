@@ -1,0 +1,97 @@
+/* src/components/Login/Login.css */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1; /* Takes up the available vertical space */
+}
+
+.login-card {
+  background-color: var(--card-bg-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(20, 23, 71, 0.15);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-logo-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, var(--accent-color-1), var(--accent-color-2));
+  color: var(--button-text-color);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.login-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  color: var(--secondary-text-color);
+  margin-bottom: 2rem;
+}
+
+.login-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-login.primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-text-color);
+}
+
+.btn-login.primary:hover {
+  opacity: 0.9;
+}
+
+.btn-login.secondary {
+  background-color: var(--card-bg-color);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-login.secondary:hover {
+  background-color: #f5f6fd;
+  border-color: #d1d4e6;
+}
+
+.login-separator {
+  color: #aeb4c8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2rem 0;
+}
